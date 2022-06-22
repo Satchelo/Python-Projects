@@ -35,38 +35,40 @@ Last Modified Date: 22/06/2022 00:30
 # print(recep.isdigit())
 # print(recep.isupper())
 
-onurreis = [4,2,3,1,7,6,5]
-onurreis.append("onur") # Add data to list
-print(onurreis)
-onurreis.append("onur") # Add data to list
-print(onurreis)
+# onurreis = [4,2,3,1,7,6,5]
+# onurreis.append("onur") # Add data to list
+# print(onurreis)
+# onurreis.append("onur") # Add data to list
+# print(onurreis)
 
 
-onurreis.insert(3, "reco") # Add data to specific index
-print(onurreis)
+# onurreis.insert(3, "reco") # Add data to specific index
+# print(onurreis)
 
-onurreis.remove("onur") # Remove data from list
-print(onurreis)
-onurreis.append(10)
-print(onurreis)
-onurreis.pop() # Remove last element
-print(onurreis)
+# onurreis.remove("onur") # Remove data from list
+# print(onurreis)
+# onurreis.append(10)
+# print(onurreis)
+# onurreis.pop() # Remove last element
+# print(onurreis)
 
-onurreis.remove("onur") # Remove data from list
-print(onurreis)
-onurreis.remove("reco") # Remove data from list
-print(onurreis)
-onurreis.sort() #Sort the list
-print(onurreis)
+# onurreis.remove("onur") # Remove data from list
+# print(onurreis)
+# onurreis.remove("reco") # Remove data from list
+# print(onurreis)
+# onurreis.sort() #Sort the list
+# print(onurreis)
 
-onurreis.sort(reverse=True) #Sort the list
-print(onurreis)
+# onurreis.sort(reverse=True) #Sort the list
+# print(onurreis)
 
-gdgfgdfdg = "Onur"
-print(gdgfgdfdg)
+# gdgfgdfdg = "Onur"
+# print(gdgfgdfdg)
 
 
-b= "Onur was a good man but he has a problem. he was trusting to everyone. If I could go back in time. I could say: Onur fuck your life"
-print(b.upper())
-b= b.upper()
-print(b.isupper())
+# b= "Onur was a good man but he has a problem. he was trusting to everyone. If I could go back in time. I could say: Onur fuck your life"
+# print(b.upper())
+# b= b.upper()
+# print(b.isupper())
+
+print("ONUR IS A JUNIOR PYTHON DEVELOPER")
