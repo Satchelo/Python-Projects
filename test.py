@@ -140,9 +140,44 @@ Last Modified Date: 22/06/2022 00:30
 # a = True
 # b = False
 # c ='true'
-# print(a == b)
+# print(a != b)
 
 # lt = [1, 'a', 2, 3, True, 4, 5, 'true', '1']
 # print(lt[-1])
 # lt.reverse()
 # print(lt)
+
+""" IF SORGULARI """
+
+# hava_durumu = 'yagışlı'
+# if hava_durumu == 'yagışlı' :
+#     print('şemsiyeni al!')
+# elif hava_durumu == 'karlı':
+#     print('Atkını al!')
+# else: 
+#     print('Sorun yok')
+
+
+# yas = 15
+# if yas > 18:
+#     print('HOŞGELDİNİZ')
+# else:
+#     print('SEN BURAYA GİREMEZSİN')
+
+lt = ['a', 'b', 'c']
+hedef_harf = 'd'
+if hedef_harf in lt:
+    print('buldum')
+else:
+    lt.append(hedef_harf)
+    print('GÜNCEL LİSTE {}'.format(lt))
+
+hedef_harf = 'a'
+
+if (hedef_harf in lt) and (hedef_harf == lt[0]):
+    print('buldum ve ilk eleman konumunda')
+elif hedef_harf in lt:
+        print('buldum ama ilk eleman konumunda değil')
+else:
+    lt.append(hedef_harf)
+    print('GÜNCEL LİSTE {}'.format(lt))
