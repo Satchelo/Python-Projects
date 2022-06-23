@@ -71,4 +71,13 @@ Last Modified Date: 22/06/2022 00:30
 # b= b.upper()
 # print(b.isupper())
 
-print("ONUR IS A JUNIOR PYTHON DEVELOPER")
+# print("ONUR IS A JUNIOR PYTHON DEVELOPER")
+
+"""23/06/2022"""
+a= True
+print(type(a))
+yas1 = 18
+yas2 = 20
+print(yas1 == 18)
+print(yas1 != 18)
+print(not yas2 > 18)
