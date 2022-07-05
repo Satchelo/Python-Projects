@@ -164,20 +164,70 @@ Last Modified Date: 22/06/2022 00:30
 # else:
 #     print('SEN BURAYA GİREMEZSİN')
 
-lt = ['a', 'b', 'c']
-hedef_harf = 'd'
-if hedef_harf in lt:
-    print('buldum')
-else:
-    lt.append(hedef_harf)
-    print('GÜNCEL LİSTE {}'.format(lt))
+# lt = ['a', 'b', 'c']
+# hedef_harf = 'd'
+# if hedef_harf in lt:
+#     print('buldum')
+# else:
+#     lt.append(hedef_harf)
+#     print('GÜNCEL LİSTE {}'.format(lt))
 
-hedef_harf = 'a'
+# hedef_harf = 'a'
 
-if (hedef_harf in lt) and (hedef_harf == lt[0]):
-    print('buldum ve ilk eleman konumunda')
-elif hedef_harf in lt:
-        print('buldum ama ilk eleman konumunda değil')
-else:
-    lt.append(hedef_harf)
-    print('GÜNCEL LİSTE {}'.format(lt))
+# if (hedef_harf in lt) and (hedef_harf == lt[0]):
+#     print('buldum ve ilk eleman konumunda')
+# elif hedef_harf in lt:
+#         print('buldum ama ilk eleman konumunda değil')
+# else:
+#     lt.append(hedef_harf)
+#     print('GÜNCEL LİSTE {}'.format(lt))
+
+""" 4/07/2022  FOR LOOP """
+
+yorum_bırakanlar = ["Onur Yaşar", "Emre Uluışık", "Emre Savaş", "Eray Bayrak"]
+# for kullanıcı in yorum_bırakanlar:
+#     print (kullanıcı)
+
+# kullanıcı_sayısı = 0
+# for kullanıcı in yorum_bırakanlar:
+#     kullanıcı_sayısı = kullanıcı_sayısı + 1
+#     print(kullanıcı_sayısı, kullanıcı)
+
+# ad, soyad = yorum_bırakanlar[0].split()[0], yorum_bırakanlar[0].split()[1]
+# print(ad)
+# print(soyad)
+
+# kullanıcı_sayısı = 0
+# for kullanıcı in yorum_bırakanlar:
+#     kullanıcı_sayısı = kullanıcı_sayısı + 1
+#     ad, soyad = kullanıcı.split()[0], kullanıcı.split()[1]
+#     print('{0}. kullanıcının adı {1} ve soyadı {2}'.format(kullanıcı_sayısı, ad, soyad))
+
+# moderator = "Emre Savaş"
+# moderator_sayısı = 0
+# kullanıcı_sayısı = 0
+# for kullanıcı in yorum_bırakanlar:
+#     ad, soyad = kullanıcı.split()[0], kullanıcı.split()[1]
+#     if kullanıcı == moderator :
+#         moderator_sayısı += 1
+#         print('{0}. moderatorün adı {1} ve soyadı {2}'.format(moderator_sayısı, ad, soyad))
+#     else:
+#         kullanıcı_sayısı += 1
+#         print('{0}. kullanıcının adı {1} ve soyadı {2}'.format(kullanıcı_sayısı, ad, soyad))
+
+# kl1 = {
+#     'name' : 'onur',
+#     'age' : 23,
+#     'city' : 'istanbul'
+# }
+# a = kl1.items()
+# print(a)
+# for k, v in a :
+#     print('key: {} \t value: {}'.format(k, v))
+
+# sayı = 6
+# sonuç = 1
+# while sayı > 0:
+#     sonuç = sayı * sonuç
+#     sayı -= 1
+# print(sonuç)
