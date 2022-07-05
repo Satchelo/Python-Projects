@@ -231,3 +231,125 @@ yorum_bırakanlar = ["Onur Yaşar", "Emre Uluışık", "Emre Savaş", "Eray Bayr
 #     sonuç = sayı * sonuç
 #     sayı -= 1
 # print(sonuç)
+
+# """ 05/07/2022 """
+
+# print(range(10))
+# print(list(range(6,10,2)))
+# print([*range(10)])
+
+# harfler = ['a', 'b', 'c']
+# for index, harf in enumerate(harfler):
+#     print('{}. harf = {}'.format(index+1, harf))
+
+# for  harf in enumerate(harfler):
+#     print(harf)
+
+# ülkeler = ['tr', 'fr', 'de']
+# sıralama = range(1,4)
+# for ülke in zip(ülkeler, sıralama):
+#     print(ülke)
+
+# harfler1 = ['a', 'b', 'c', 'd', 'e']*10
+# for index, harf in enumerate(harfler1):
+#     if harf == 'c':
+#      print('{} harfi {}. indexte!'.format(harf, index))
+#      break
+
+# for sayı in range(1,12):
+#     if sayı%2 == 0 :
+#         continue
+#     print(sayı)
+
+# for sayı in range(1,12):
+#     if sayı%2 != 0 :
+#         pass
+#     else:
+#         print(sayı)
+
+# """ QUIZ 2 """
+
+# kullanıcı1 = {
+#     'ad' : 'Ferhat',
+#     'soyad' : 'Ibrik',
+#     'uzmanlık' : ['Front-end'] 
+# }
+# kullanıcı2 = {
+#         'ad' : 'Gökçe',
+#         'soyad' : 'Gün',
+#         'uzmanlık' : ['Tasarım'] 
+# }
+# kullanıcı3 = {
+
+#     'ad' : 'Mesut',
+#     'soyad' : 'Gün',
+#     'uzmanlık' : ['Front-end'] 
+# }
+# print(kullanıcı1['uzmanlık'])
+# print(kullanıcı1.get('uzmanlık'))
+
+# kullanıcı_listesi = [kullanıcı1, kullanıcı2, kullanıcı3]
+# for kullanıcı  in kullanıcı_listesi:
+#     if kullanıcı.get('uzmanlık') == ['Front-end']:
+#         print(kullanıcı.get('ad'))
+# for kullanıcı  in kullanıcı_listesi:
+#     if 'Front-end' in kullanıcı.get('uzmanlık'):
+#         print(kullanıcı.get('ad'))
+    
+# kullanıcı3['uzmanlık'].append('yazılım')
+# print(kullanıcı_listesi)
+
+# kullanıcı_yasları = [22, 32, 34]
+# for kullanıcı, yas in zip(kullanıcı_listesi, kullanıcı_yasları):
+#     if yas<30:
+#         print(kullanıcı)
+
+# değer = 7
+# x = değer-1
+# while x>1:
+#     if değer%x == 0:
+#         print('{} değeri asal sayı değil!'.format(değer))
+#     else:
+#         x-=1
+# else:
+#     print('{} değeri asaldır'.format(değer)) 
+
+# """ FUNCTIONS """
+
+# def buyuk_sayıyı_dondur(a, b):
+#     if a>b:
+#         return a
+#     elif b>a:
+#         return b
+
+# print(buyuk_sayıyı_dondur(7, 4))
+# print(buyuk_sayıyı_dondur(3, 1))
+
+# def metin_yazdır (a, b):
+#     buyuk_sayı = buyuk_sayıyı_dondur(a, b)
+#     şablon_metin = '{} daha büyük sayıdır.'.format(buyuk_sayı)
+#     print(şablon_metin)
+# print(metin_yazdır(5, 10))
+
+# def isim_soyisim_ayırma (isim_soyisim):
+#     isim = isim_soyisim.split()[0]
+#     soyisim = isim_soyisim.split()[1]
+#     return isim, soyisim
+
+# print(isim_soyisim_ayırma('Onur Yaşar'))
+# c,d = isim_soyisim_ayırma('Onur Yaşar')
+# print(c)
+
+# def isim_soyisim_birleştirme (*args):
+#     for item in args:
+#         print(item)
+#     return ' '.join(args)
+# print(isim_soyisim_birleştirme('MUSTAFA', 'KEMAL', 'ATATÜRK'))
+
+# def gobek_adı_yazdır (**kwargs):
+#     if 'gobekadı' in kwargs:
+#         print(kwargs ['gobekadı'])
+#     else :
+#         print('gobek adı yok')
+
+# gobek_adı_yazdır(adı='Onur', gobekadı ='Okan', soyadı = 'Yaşar')
