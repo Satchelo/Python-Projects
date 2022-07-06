@@ -353,3 +353,77 @@ yorum_bırakanlar = ["Onur Yaşar", "Emre Uluışık", "Emre Savaş", "Eray Bayr
 #         print('gobek adı yok')
 
 # gobek_adı_yazdır(adı='Onur', gobekadı ='Okan', soyadı = 'Yaşar')
+
+""" 06/07/2022"""
+# def karesini_al (x):
+#     return x**2
+# sayılar = [*range(1,6)]
+# print(sayılar)
+# print([*map(karesini_al, sayılar)])
+
+# def çift_sayıları_filtrele (x):
+#     if x%2 == 0:
+#         return x
+# print([*filter(çift_sayıları_filtrele, sayılar)])
+
+# print([*map(lambda x : x**2, sayılar)])
+# print([*filter(lambda x : x if x%2 == 0 else None, sayılar)])
+
+# print(input('bir_sayı_girin'))
+# girdi = input('bir_sayı_girin')
+# print(type(int(girdi)))
+
+# def uygulama ():
+#     girdi = input('bir_sayı_girin:')
+#     islem = input('çift_mi_tek_mi_sorgula:')
+#     if islem == 'çift' :
+#         if int(girdi)%2 ==0 :
+#             return'{} sayısı bir çift sayıdır.'.format(girdi)
+#         else:
+#             return'{} sayısı bir çift sayı değildir!.'.format(girdi)
+#     elif islem == 'tek' :
+#         if int(girdi)%2 == 1:
+#             return'{} sayısı bir tek sayıdır.'.format(girdi)
+#         else:
+#             return'{} sayısı bir tek sayı değildir!.'.format(girdi)
+#     else:
+#         return 'onur İŞLEM kısmına bir şey YAZMADIN!!'
+    
+# print(uygulama())
+""" HESAP MAKİNESİ UYGULAMASI """
+
+# def hesap_makinesi():
+#     a = int(input('birinci_sayı: '))
+#     b = int(input('ikinci_sayı: '))
+#     işlem = input('toplama(+), çıkarma(-), çarpma(*), bölme(/) giriniz: ')
+#     if işlem == '+':
+#         sonuç = a+b 
+#         return sonuç
+#     elif işlem == '-':
+#         sonuç = a-b
+#         return sonuç
+#     elif işlem == '*':
+#         sonuç = a*b
+#         return sonuç
+#     elif işlem == '/':
+#         sonuç = a/b
+#         return sonuç
+#     else:
+#         return 'HATALISINIZ!!'
+    
+
+# print(hesap_makinesi())
+
+def eposta_kontrol ():
+    girdi = input('geçerli bir eposta giriniz.. : ')
+    while not (('@'in girdi) and ('.'in girdi)):
+        return 'Lütfen geçerli bir eposta girin!'
+        girdi = input('geçerli bir eposta giriniz.. : ')
+    else:
+        return 'TEBRİKLER, geçerli bir eposta girdiniz.'
+
+print(eposta_kontrol())
+
+
+            
+
