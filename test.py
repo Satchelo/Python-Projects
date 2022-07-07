@@ -414,16 +414,140 @@ yorum_bırakanlar = ["Onur Yaşar", "Emre Uluışık", "Emre Savaş", "Eray Bayr
 
 # print(hesap_makinesi())
 
-def eposta_kontrol ():
-    girdi = input('geçerli bir eposta giriniz.. : ')
-    while not (('@'in girdi) and ('.'in girdi)):
-        return 'Lütfen geçerli bir eposta girin!'
-        girdi = input('geçerli bir eposta giriniz.. : ')
-    else:
-        return 'TEBRİKLER, geçerli bir eposta girdiniz.'
+# def eposta_kontrol ():
+#     girdi = input('geçerli bir eposta giriniz.. : ')
+#     while not (('@'in girdi) and ('.'in girdi)):
+#         print('Lütfen geçerli bir eposta girin!')
+#         girdi = input('geçerli bir eposta giriniz.. : ')
+#         print ('TEBRİKLER, geçerli bir eposta girdiniz.')
 
-print(eposta_kontrol())
+# eposta_kontrol()
+# def mail_kontrol():
+#     while True:
+#         girdi = input('geçerli bir eposta girin : ')
+#         if ('@'in girdi and '.' in girdi):
+#              print('TEBRİKLER, geçerli adres girdiniz!!'),
+#              break
+#         else:
+#             print('yanlış girdiniz!!')
+#             pass
+        
+# mail_kontrol()
 
 
-            
+
+
+""" 07/07/2022 """
+# def tamsayıya_cevir():
+#     while True:
+#          girdi = input('ondalık sayı giriniz: ')
+#          status = ''
+#          try:
+#              girdi = float(girdi)
+#              print('yuvarlama işleminin sonucu: {}'.format(round(girdi)))
+#              status = 'başarılı'
+#              break
+#          except:
+#              print('{} girdisi ondalık tipe çevrilemiyor.'.format(girdi))
+#              status = 'başarısız'
+#              pass
+#          finally:
+#             print(' tam sayıya çevirme işlemi {} olarak tanımlandı.'.format(status))
+# tamsayıya_cevir()
+
+# vatandaş = {
+#     'ad' : 'onur',
+#     'tcno' : 425508
+# }
+
+# try:
+#     print(vatandaş['afd'])
+# except IndexError:
+#     print('indexlemeye çalıştığınız eleman listenin dışında')
+# except KeyError:
+#     print('verilen anahtara karşı değer bulunmuyor.')
+# except:
+#     print('KOD DÜZGÜN ÇALIŞMIYOR.')
+
+""" QUİZ 3 """
+
+# def üstel_sayı (a,b):
+    # return a**b
+# print(üstel_sayı(3, 2))
+
+#     sonuç = 1
+#     if b < 1:
+#         return sonuç
+#     for kuvvet in range(1, b+1):
+#         sonuç = sonuç * a
+#     return sonuç
+# print(üstel_sayı(4, 1))
+
+# listem = [1, 2, 3,5,6, 4]
+# def listedki_enbüyük_2sayı(listem):
+#     print(listem.sort)
+#     return listem[-1], listem[-2]
+# deneme = [1, 2, 3,5,6, 4]
+
+# print(listedki_enbüyük_2sayı(deneme))
+
+# liste = [1,2,3,'d','DS']
+# sonuç = []
+# def str_filtrele(liste):
+# #     for x in liste:
+# #         if type(x) == str:
+# #             print(sonuç.append(x))
+# #         else:
+# #             pass
+# #     return sonuç
+# # liste = [1,2,3,'d','DS']
+# # print(str_filtrele(liste))
+#     return[*filter(lambda x: x if type (x) == str else None , liste)] 
+# print(str_filtrele(liste))
+
+# def paradan_Altı_sıfır_AT  (liste):
+#     return[*map(lambda x: int(x/10**6) , liste)]
+# print(paradan_Altı_sıfır_AT([2000000,230000000,5600000000]))
+
+# def saat_kaç():
+#     saat = input('saat giriniz : ')
+#     if saat.isdigit():
+#         saat = int(saat)
+#         if ((saat >= 0) and (saat < 24)):
+#             dakika = input('dakika giriniz : ')
+#             if dakika.isdigit():
+#                 dakika=int(dakika)
+#                 if (dakika >= 0 and dakika < 60):
+#                     return 'girilan saat {}:{}'.format(saat, dakika)
+#                 else:
+#                     return 'girilen dakika aralığı yanlış'
+#             else:
+#                 return 'dakika tam sayı tipinde değil'
+#         else:
+#             return 'girilen saat aralığı yanlış'
+#     else:
+#          return 'saat tam sayı tipinde değil'                      #try
+                                                     #except whle true
+                                                     #finally
+
+
+# print(saat_kaç())
+
+# def saat_verisi_Al():
+#     while True:
+#         saat = input('lütfen saat giriniz: ')
+#         dakika = input('lütfen dakika giriniz : ')
+#         try:
+#            saat = int(saat)
+#            dakika = int(dakika)
+#            if (saat>=0 and saat<24) and (dakika>=0 and dakika<60):
+#                 print('Saat şu anda {}:{}'.format(saat, dakika))
+#                 break
+#            else:
+#                 print('Saat veya dakikayı yanlış aralıkta girdiniz!!')
+#                 pass
+#         except:
+#             print('Geçersiz saat verisi girdiniz!!')
+
+# saat_verisi_Al()
 
